@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Записи о нарушениях</h1>
+<div class="col-md6 border rounded">
+    <div>
+        <ol>
+            {% for item in list_prof %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+</div>
+{% endblock %}
